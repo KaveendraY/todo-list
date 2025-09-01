@@ -73,6 +73,8 @@ Access:
 API → http://localhost:5000
 Frontend → http://localhost:4200 
 
+<img width="1821" height="617" alt="image" src="https://github.com/user-attachments/assets/e8a9df9b-41cd-4567-9455-b65055c5df5c" />
+
 Testing
 Backend tests
 cd backend/TodoApi
