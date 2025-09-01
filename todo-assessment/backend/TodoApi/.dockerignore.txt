@@ -1,0 +1,11 @@
+bin
+obj
+.vs
+.git
+*.user
+*.suo
+*.log
+node_modules
+**/node_modules
+Dockerfile*
+Dockerfile.*
