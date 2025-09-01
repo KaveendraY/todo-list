@@ -1,0 +1,23 @@
+<div class="todo-wrapper">
+  <app-todo-form (created)="onCreated()"></app-todo-form>
+
+  <div class="status" *ngIf="loading">Loading tasks...</div>
+  <div class="error" *ngIf="error">{{ error }}</div>
+
+  <div class="list" *ngIf="!loading && tasks.length === 0">
+    No tasks — add your first task!
+  </div>
+
+  <div class="list" *ngIf="tasks.length > 0">
+    <div *ngFor="let t of tasks" class="card">
+      <div class="card-left">
+        <div class="title">{{ t.title }}</div>
+        <div class="desc" *ngIf="t.description">{{ t.description }}</div>
+        <div class="meta">Added: {{ t.createdAt | date:'medium' }}</div>
+      </div>
+      <div class="card-right">
+        <button (click)="markDone(t)" class="done-btn">Done</button>
+      </div>
+    </div>
+  </div>
+</div>

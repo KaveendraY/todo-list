@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="todo-form">
+  <div class="row">
+    <input formControlName="title" placeholder="Add a new task..." class="title-input" />
+  </div>
+  <div class="row small">
+    <textarea formControlName="description" placeholder="Optional description" rows="2"></textarea>
+  </div>
+  <div class="row actions">
+    <button type="submit" [disabled]="submitting" class="btn">
+      {{ submitting ? 'Saving...' : 'Add Task' }}
+    </button>
+    <div class="error" *ngIf="error">{{ error }}</div>
+  </div>
+</form>
+

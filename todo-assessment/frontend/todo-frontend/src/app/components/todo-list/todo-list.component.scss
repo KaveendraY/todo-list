@@ -1,0 +1,19 @@
+.todo-wrapper {
+  max-width: 720px; margin: 1rem auto;
+  .status,.error { margin:.5rem 0; color:#555; }
+  .list { margin-top:1rem; }
+  .card {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:.8rem; border-radius:10px; margin-bottom:.6rem; background:#fff;
+    box-shadow:0 1px 4px rgba(0,0,0,.06);
+    .card-left { flex:1;
+      .title { font-weight:600; font-size:1.05rem; }
+      .desc { color:#555; font-size:.95rem; margin-top:4px; }
+      .meta { color:#999; font-size:.8rem; margin-top:6px; }
+    }
+    .card-right {
+      margin-left:1rem;
+      .done-btn { background:#2e7d32; color:#fff; border:none; padding:.5rem .9rem; border-radius:8px; cursor:pointer; }
+    }
+  }
+}

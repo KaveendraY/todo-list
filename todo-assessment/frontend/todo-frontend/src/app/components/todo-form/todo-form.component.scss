@@ -1,0 +1,14 @@
+.todo-form {
+  display: block;
+  .row { margin-bottom: 0.5rem; }
+  .title-input {
+    width: 100%; padding: 0.6rem; border-radius: 8px; border: 1px solid #e2e2e2; font-size: 1rem;
+  }
+  textarea {
+    width: 100%; padding: 0.5rem; border-radius: 8px; border: 1px solid #e2e2e2; resize: vertical;
+  }
+  .actions { display:flex; align-items:center; gap: 1rem;
+    .btn { background: #1976d2; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; }
+    .error { color: #b00020; }
+  }
+}
