@@ -1,6 +1,3 @@
-Todo Assessment Project
-Kaveendra Yapaarachchi
-
 This is a full stack Todo application built with:
 
 - Backend: ASP.NET Core Web API (.NET 8, EF Core, MSSQL)
